@@ -1,16 +1,23 @@
 {
-  "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-obfuscate": "^0.2.9",
-    "gulp-imagemin": "^7.1.0"
-  },
+  "name": "seu-projeto",
+  "version": "1.0.0",
+  "description": "Descrição do seu projeto",
+  "main": "index.js",
   "scripts": {
-    "comprimeImagens": "gulp.src('./source/images/*').pipe(imagemin()).pipe(gulp.dest('./build/images'))",
-    "comprimeJavaScript": "gulp.src('./source/scripts/*.js').pipe(uglify()).pipe(obfuscate()).pipe(gulp.dest('./build/scripts'))",
-    "compilaSass": "gulp.src('./source/styles/main.scss').pipe(sourcemaps.init()).pipe(sass({outputStyle: 'compressed'})).pipe(sourcemaps.write('./maps')).pipe(gulp.dest('./build/styles'))",
-    "default": "gulp.watch('./source/styles/*.scss', {ignoreInitial: false}, gulp.series(compilaSass)); gulp.watch('./source/scripts/*.js', {ignoreInitial: false}, gulp.series(comprimeJavaScript)); gulp.watch('./source/images/*', {ignoreInitial: false}, gulp.series(comprimeImagens))"
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.7.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-obfuscate": "^1.1.0",
+    "gulp-imagemin": "^7.1.0",
+    "sass": "^1.43.4"
   }
 }
