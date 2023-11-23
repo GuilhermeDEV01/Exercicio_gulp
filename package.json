@@ -14,9 +14,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
-    "gulp-sourcemaps": "^3.7.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-obfuscate": "^1.1.0",
+    "gulp-obfuscate": "^0.2.9",
     "gulp-imagemin": "^7.1.0",
     "sass": "^1.43.4"
   }
